@@ -50,7 +50,7 @@ Não abra `index.html` diretamente por duplo clique: os módulos precisam do ser
 
 ## Dados e autonomia
 
-Esta é uma **versão pessoal local**. Não há login, nuvem, múltiplos usuários ou sincronização automática. Propostas e custos ficam no `localStorage` do navegador, por origem. `localhost:4173`, `127.0.0.1:4173` e outra porta são origens diferentes: use sempre o mesmo endereço ou restaure um backup ao mudar.
+O app está publicado no GitHub Pages em https://1skatista.github.io/credisim-app-proprio/. O repositório e o código-fonte são públicos. Não há login nem sincronização automática: propostas e custos ficam no `localStorage` do navegador, separados por dispositivo e endereço. O app aberto por `localhost:4173` no computador e o site publicado no celular mantêm dados independentes. Use o backup JSON para mover dados entre navegadores.
 
 Faça backup em **Modo local → Exportar backup JSON**. A restauração valida o arquivo, pede confirmação e baixa um backup do estado anterior. Limpar os dados do navegador pode apagar os registros.
 
@@ -77,7 +77,7 @@ Não foram copiadas contas ou propostas da Whacka. O site publicado original nã
 
 Foram verificadas as sete telas em larguras de 320, 390, 768 e 1440 pixels, sem transbordamento horizontal da página. Tabelas têm rolagem própria. No celular, há navegação inferior e resumo fixo do custo no simulador; no desktop, menu lateral e resultados ao lado do formulário.
 
-O endereço localhost pertence ao computador onde o servidor roda. Para usar em outro aparelho, será necessário hospedar os arquivos em HTTPS ou configurar acesso pela rede. A entrega atual não publica o aplicativo nem abre portas para outros aparelhos. Os arquivos podem ser servidos por hospedagem estática, pois todos os cálculos e o armazenamento são locais.
+A versão web está disponível em HTTPS no endereço do GitHub Pages acima. Os arquivos podem ser servidos como site estático: os cálculos e os dados permanecem no navegador. Atualizações enviadas à branch `main` são publicadas pelo workflow do GitHub Actions. Para rodar a cópia local, use o servidor descrito na seção Windows.
 
 A instalação PWA e o funcionamento sem rede dependem do navegador e do cache ter sido preenchido. O manifesto usa ícone SVG; determinadas plataformas podem exigir ícones PNG para oferecer instalação. Não foi produzido APK ou pacote para loja.
 
